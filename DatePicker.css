@@ -1,0 +1,137 @@
+/******主容器******/
+.datePicker{
+	position: relative;
+}
+/******时间输入框******/
+.datePicker>input.datePicker-input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(datePickerIcon.png) no-repeat;
+	background-position: center right; 
+	height: 2em;
+}
+/******时间选择面板******/
+.datePicker>div.datePicker-panel{
+	width: 282px;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius:3px;
+	position: absolute;
+	top:2.25em;
+	left: 0;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+
+}
+/******时间选择面板头部******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-header{
+
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-header>span>i.last-year,.datePicker>div.datePicker-panel>div.datePicker-panel-header>span>i.next-year{
+	cursor: pointer;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-header>span>i.last-month,.datePicker>div.datePicker-panel>div.datePicker-panel-header>span>i.next-month{
+	color:#00aaff;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-header>em{
+	display: inline-block;
+	width: 60%;
+	text-align: center;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-header>span.float-right{
+	float: right;
+	text-align: right;
+	width: 20%;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-header>span.float-left{
+	float: left;
+	text-align: left;
+	width: 20%;
+}
+/******时间选择面板主体******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-body{
+
+}
+/******时间选择面板主体周信息******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-week{
+	background-color: #f2f2f2;
+}
+/******时间选择面板主体周信息******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-week>span{
+	display: inline-block;
+	width:2em;
+	padding: 4px;
+	text-align: center;
+}
+/******时间选择面板主体日信息******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day{
+
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul>li{
+
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul>li>span{
+	display: inline-block;
+	width: 2em;
+    margin: 6px 4px;
+	text-align: center;
+	color: #b2b2b2;
+	cursor: not-allowed;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul>li>span.selected-month{
+	color:#707070;
+	cursor: pointer;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul>li>span.selected{
+	background-color: #5ecc49;
+	color:#fff;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-body>div.datePicker-panel-body-day>ul>li>span.otherSelected{
+	background-color: #d2fbc9;
+}
+/******时间选择面板底部******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-footer.clearfix{
+	clear: both;
+	height: 2em;
+}
+
+/******时间选择面板底部小时分秒选择******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-footer>div.datePicker-time{
+	float: left;
+	border: 1px solid #c3c3c3;
+	border-radius: 3px;
+}
+/******时间选择面板底部小时分秒选择******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-footer>div.datePicker-time>input{
+	/*display: inline-block;*/
+	border: none;
+	float: left;
+	width: 8em;
+	margin:0;
+	margin-left: 5px;
+	padding: 5px 0;
+	border-radius:3px; 
+	color: #707070;
+	font-size: 12px;
+	font-weight: 500;
+}
+.datePicker>div.datePicker-panel>div.datePicker-panel-footer>div.datePicker-time>label{
+	float: left;
+}
+/******时间选择面板底部确认按钮******/
+.datePicker>div.datePicker-panel>div.datePicker-panel-footer>div.datePicker-ok{
+	float: right;
+	padding: 3px 10px;
+	background-color: #fbfbfb;
+	border-radius: 3px;
+	border: 1px solid #c3c3c3;
+	cursor:pointer;
+}
+
+
