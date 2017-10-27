@@ -1,15 +1,16 @@
 define(function() {
 	var BaseComponent = Class.extend({
 		/**
-		 * 功能说明： 消毁组件		* 参数说明：
-		 *无参数
+		 * 功能说明： 消毁组件
+		 * 参数说明：
+		 * 无参数
 		 **/
 		destroy: $.noop,
 		/**
-		 *功能说明 ：添加自定义事件
-		 *参数说明 ：
-		 *参数type-自定义事件类型(名称)
-		 *参数hander-自定义事件类型对应的事件执行函数
+		 * 功能说明 ：添加自定义事件
+		 * 参数说明 ：
+		 * @param type [String] 自定义事件类型(名称)
+		 * @param hander [Function] 自定义事件类型对应的事件执行函数
 		 **/
 		on: function(type, handler) {
 			var me = this;
@@ -19,10 +20,11 @@ define(function() {
 			me.config.handlers[type].push(handler);
 		},
 		/**
-		 *功能说明 ：触发自定义事件
-		 *参数说明 ：
-		 *参数type-自定义事件类型(名称)
-		 *参数data-自定义事件类型对应的事件执行函数的参数
+		 * 功能说明 ：触发自定义事件
+		 * 参数说明 ：
+		 * @param type [String] 自定义事件类型(名称)
+		 * @param data [Function] 自定义事件类型对应的事件执行函数的参数
+		 * @return undefined 无返回值
 		 **/
 		fire: function(type, data) {
 			var me = this;
@@ -34,9 +36,11 @@ define(function() {
 			}
 		},
 		/**
-		 *功能说明 ：移除事件
-		 *参数说明 ：
-		 *参数type-事件类型(名称)
+		 * 功能说明 ：移除事件
+		 * 参数说明 ：
+		 * @param type [String] 事件类型(名称)
+		 * @param handler [Function] 事件处理函数
+		 * @return undefined 无返回值
 		 **/
 		off: function(type, handler) {
 			var me = this;
@@ -51,9 +55,10 @@ define(function() {
 			handlers.splice(i, 1);
 		},
 		/**
-		 *功能说明 : 显示组件UI
-		 *参数说明 ：
-		 *参数isAnimate-是否开启动画效果
+		 * 功能说明 : 显示组件UI
+		 * 参数说明 ：
+		 * @param isAnimate [Boolean] 是否开启动画效果
+		 * @return undefined 无返回值
 		 **/
 		show: function(isAnimate) {
 			var me = this;
@@ -64,9 +69,10 @@ define(function() {
 			}
 		},
 		/**
-		 *功能说明 : 隐藏组件UI
-		 *参数说明 ：
-		 *参数isAnimate-是否开户动画效果
+		 * 功能说明 : 隐藏组件UI
+		 * 参数说明 ：
+		 * @param isAnimate [Boolean] 是否开户动画效果
+		 * @return undefined 无返回值
 		 **/
 		hide: function(isAnimate) {
 			var me = this;
@@ -77,9 +83,10 @@ define(function() {
 			}
 		},
 		/**
-		 *功能说明 : 设置组件UI高度
-		 *参数说明 ：
-		 *参数height-高度
+		 * 功能说明 : 设置组件UI高度
+		 * 参数说明 ：
+		 * @param height [Number] 高度
+		 * @return undefined 无返回值
 		 **/
 		setHeight: function(height) {
 			var me = this;
@@ -88,9 +95,10 @@ define(function() {
 			});
 		},
 		/**
-		 *功能说明 : 设置组件UI高度
-		 *参数说明 ：
-		 *参数width-宽度
+		 * 功能说明 : 设置组件UI高度
+		 * 参数说明 ：
+		 * @param width [Number] 宽度
+		 * @return undefined 无返回值
 		 **/
 		setWidth: function(width) {
 			var me = this;
@@ -99,9 +107,10 @@ define(function() {
 			});
 		},
 		/**
-		 *功能说明 : 设置组件UI高度
-		 *参数说明 ：
-		 *无参数
+		 * 功能说明 : 设置组件UI高度
+		 * 参数说明 ：
+		 * 无参数
+		 * @return undefined 无返回值
 		 **/
 		getHeight: function() {
 			var me = this;
@@ -109,9 +118,10 @@ define(function() {
 			return height;
 		},
 		/**
-		 *功能说明 : 设置组件UI高度
-		 *参数说明 ：
-		 *无参数
+		 * 功能说明 : 设置组件UI高度
+		 * 参数说明 ：
+		 * 无参数
+		 * @return undefined 无返回值
 		 **/
 		getWidth: function() {
 			var me = this;
@@ -119,15 +129,16 @@ define(function() {
 			return width;
 		},
 		/**
-		 *功能说明 : 容器发生尺寸变化时的回调
-		 *参数说明 ：
-		 *无参数
+		 * 功能说明 : 容器发生尺寸变化时的回调
+		 * 参数说明 ：
+		 * 无参数
+		 * @return undefined 无返回值
 		 **/
 		_resize: $.noop,
 		/**
-		 *功能说明 : 初始化组件名
-		 *参数说明 ：
-		 *无参数
+		 * 功能说明 : 初始化组件名
+		 * 参数说明 ：
+		 * 无参数
 		 **/
 		_setWidgetClass: function() {
 			var me = this;
